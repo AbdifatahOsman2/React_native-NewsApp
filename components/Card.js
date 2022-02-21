@@ -30,7 +30,12 @@ import {
               artciles.map((article) => (
                 <>
                   <Text>Article {article.title}</Text>
-
+                  <Image
+                    style={styles.image}
+                    source={{
+                      uri: `${article.urlToImage}`,
+                    }}
+                  />
                 </>
               ))}
           </View>
